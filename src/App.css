@@ -1,38 +1,92 @@
 .App {
   text-align: center;
+  position: relative;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.input-container{
+  width: 40%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.main-container{
+  width: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.table-body{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+table {
+  border-collapse: collapse;
+  width: 80%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-body{
+  position: absolute;
+  left: 45%;
+  top: 20%;
+  background-color: #ffffff;
+  padding: 1rem;
+}
+
+th,
+td {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+  /* font-size: 32px; */
+}
+
+.Theading {
+  background-color: rgb(117, 201, 250);
+}
+
+.Theading2{
+  background-color: rgb(221, 250, 117);
+}
+
+td {
+  background-color: rgb(205, 235, 253);
+}
+
+form {
+  display: flex;
+  gap: 5px;
+}
+
+form td:last-child {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.Btns{
+  width:12rem;
+}
+
+.icon-img{
+  width: 3rem;
+  height: 2.4rem;
+}
+
+
+.disease{
+  height: 2.4rem;
+}
+
+.btn-suc,.btn-dan{
+  border: none;
+  border-radius: 0.3rem;
+}
+
+.btn-suc{
+  background-color: rgb(3, 133, 16);
+}
+
+.btn-dan{
+  background-color: rgb(189, 4, 4);
+}
+
+.pageBtn{
+  position: relative;
+  left: 45px;
 }
